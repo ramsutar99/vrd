@@ -1,0 +1,10 @@
+# Dependency files
+node_modules/
+vendor/
+bower_components/
+.pnp/
+.yarn/
+.cache/
+.cargo/
+.npm/
+.vscode/

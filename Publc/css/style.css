@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header{
+    padding: 10px;
+}
+
+/* header > logo */
+.logo img{
+    width: 60px;
+    overflow: auto;
+}
+
+/* main > form */
+.form{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    border: 1px solid red;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form form{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 2fr;
+    height: auto;
+    max-width: 80vw;
+    padding: 30px;
+}
+

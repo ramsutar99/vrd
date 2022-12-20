@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRD Agro</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./favicon/VRD Log.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./images/VRD Log.jpg" alt="VRD">
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <!-- creating a form to save data in api -->
+        <div class="form">
+            <h1>Farmer Registration Form</h1>
+            <form action="http://127.0.0.1:5500/Publc/index.html" method='get' >
+                <label for="name">Farmer Name</label>
+                <input type="text" name="name" id="name" placeholder="Farmer Name" required>
+                <!-- state data -->
+
+                <!-- address details -->
+                <label for="village">Village</label >
+                <input type="text" name="village" id="village" placeholder="Village" required>
+                <label for="taluka">Taluka</label >
+                <input type="text" name="taluka" id="taluka" placeholder="Taluka" required>
+                <label for="district">District</label >
+                <input type="text" name="district" id="district" placeholder="District" required>
+
+                <!-- district -->
+                <!-- <select name="district" id="district" area-placeholder="district"></select>-->
+                <!-- taluka -->
+                <!-- <select name="taluka" id="takula"></select> -->
+                <!-- village -->
+                <!-- <select name="village" id="village"></select> --> 
+                <!-- gat / survey number -->
+                <label for="gat">Gat Number :</label>
+                <input type="text" name="gat" id="gat" placeholder="Gat Number / Survey Number" required>
+                <!-- total area -->
+                <label for="total-area">Total Area</label>
+                <input type="number" name="total-area" id="total-area" placeholder="Total Area" required>
+                <!-- area to be registered -->
+                <label for="area-reg">Registered Area</label>
+                <input type='number' name="area-reg" id="area-reg" placeholder="Registered Area" required>
+                <!-- date of registration -->
+                <label for="date-of-reg">Date of Registration</label>
+                <input type="date" name="date-of-reg" id="date-of-reg" required>
+                <!-- crop -->
+                <label for="crop">Crop</label>
+                <select name="crop" id="crop" required>
+                    <option selected disabled>-- Select Crop --</option>
+                </select>
+                <!-- variety -->
+                <label for="variety">Variety</label>
+                <select name="variety" id="variety" required>
+                    <option  selected disabled>-- Select Variety --</option>
+                </select>
+                <!-- stage -->
+                <label for="stage">Stage</label>
+                <select name="stage" id="stage" required>
+                    <option  selected disabled>-- Select Stage --</option>
+                </select>
+                <!-- source lot -->
+                <label for="lot">Lot Number</label>
+                <select name="lot" id="lot" required>
+                    <option  selected disabled>-- Select Lot Number --</option>
+                </select><span></span>
+                <div class="button">
+                <button type="reset" name="reset" id="reset" value="Reset" onclick="resetForm()"  >Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+            </form>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+    <script src="./js/availSeed.js"></script>
+</body>
+</html>
